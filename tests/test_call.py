@@ -7,7 +7,11 @@ def test_apply_type2df():
     assert str(df['rnum'].dtype) in ['int64']
     assert str(df['audiAcc'].dtype) in ['int64']
     
-    num_cols = ['rnum', 'audiAcc']
+    num_cols = [
+            'salesAmt', 'salesShare', 'salesInten',
+            'salesChange', 'salesAcc', "audiCnt","audiInten",
+            "audiChange","audiAcc","scrnCnt","showCnt","load_dt"
+            ]
 
     for c in num_cols:
         assert df[c].dtype in ['int64', 'float64']
