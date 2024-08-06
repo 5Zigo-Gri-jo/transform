@@ -1,6 +1,6 @@
 import pandas as pd
 
-def apply_type2df(load_dt='', path="~/data/2019movie"):
+def apply_type2df(load_dt='20190101', path="~/data/2019movie"):
     df = pd.read_parquet(f'{path}/{load_dt}')
     df['rnum'] = pd.to_numeric(df['rnum'])
     assert str(df['rnum'].dtype) in ['int64']
