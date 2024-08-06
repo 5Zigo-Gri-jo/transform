@@ -9,7 +9,7 @@ def apply_type2df(load_dt='20190101', path="~/data/2019movie"):
     df[num_cols] = df[num_cols].apply(pd.to_numeric)
     return df
 
-def avg_month(load_dt='20190101', path='~/data/2019movie/tmp.parquet'):
+def avg_month(path='~/data/2019movie/tmp.parquet'):
 	col_selected = ['rank', 'movieCd', 'movieNm', 'openDt', 'salesAmt', 'salesAcc', 'audiCnt', 'audiAcc', 'scrnCnt', 'showCnt', 'load_dt']
 	df_all = pd.read_parquet(path)
 	df_new = df_all[col_selected]
