@@ -3,6 +3,7 @@ name = "transform"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
+
     {name = "DONGUK777", email = "kimdongyork@gmail.com"},
 ]
 dependencies = [
@@ -10,6 +11,7 @@ dependencies = [
     "pyarrow>=17.0.0",
 ]
 requires-python = ">=3.9" 
+
 readme = "README.md"
 license = {text = "MIT"}
 
